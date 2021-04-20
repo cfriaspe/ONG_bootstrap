@@ -10,13 +10,10 @@
     <link rel="preload" href="css/style.css" as="style">
     <link href="css/style.css" rel="stylesheet">
     <title>ONG ayuda a un peludo</title>
-    
-   
-    
-   
 </head>
 
 <body>
+    <!--esta parte es en encabezado de la pagina-->
     <div class="container-fluid">
         <header class="row justify-content-center">
             <div class="col">
@@ -26,58 +23,60 @@
                 <p class="h3 titulosec text-capitalize">
                     Te ayudamos y Te orientamos para una adopcion con tenencia Responsable
                 </p>
-                <nav>
-                    <ul class="nav menu">
-                        <li class="nav-item">
-                             <a class="nav-link" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="Gatos.html">gatos</a>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="Perros.html">perros</a>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
+            <hr>
+            <!--esta division es el menu de la pagina-->
+                <div class="dropdown">
+                    <button  class=" btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true" id="bottonmenu" class=" odd" >Menu
+                        <span class="caret">
+                            <div class="dropdown-menu">
+                                <div class="dropdown-child"><li class=" even"></li>
+                                  <a href="Gatos.html">Gatos</a><li class=" odd"></li>
+                                  <a href="Perros.html">Perros</a><li class=" even"></li>
+                                  <a href="Nosotros.html">Nosotros</a><li class=" odd"></li>
+                                </div>
+                            </div>
+                        </span>
+                    </button>
+                </div> 
         </header>
-       
+       <!--esta seccion es el parrafo de seccion perro-->
         <section class="row justify-content-center no gutters"> 
-            <div class ="col-5">
+            <div class ="col-6">
                 <p class="h4">
                     Nuestros Perritos
                 </p>
-                <p class="parrafo  text-capitalize">
-                    <strong>
+                <p class="parrafo  text-capitalize" class="card">
+                    <div class="card-body">
+                    <strong class="mb-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Aliquam numquam repellendus repellat ad laudantium tempore eum, 
                      perferendis ex ullam, impedit, repudiandae labore voluptate! Ipsam sapiente repellat, sunt explicabo minus consequuntur?
                     </strong>
+                    </div>
                 </p>
             </div>
-            <div class ="col-5">
+            <!--esta seccion es el parrafo de seccion gatos-->
+            <div class ="col-6">
                 <p class="h4">
                     Nuestros Gatitos
                 </p>
                 
-                <p class="parrafo text-capitalize">
-                    <strong>
+                <p class="parrafo text-capitalize" class="card">
+                    <div class="card-body">
+                    <strong class="mb-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Aliquam numquam repellendus repellat ad laudantium tempore eum, 
                      perferendis ex ullam, impedit, repudiandae labore voluptate! Ipsam sapiente repellat, 
                      sunt explicabo minus consequuntur?
                     </strong>
+                    </div>
                 </p>
             </div>
+            <!--imagen de la portada-->
             <img class="img-fluid " src="IMG/perrosygatos.jpg" height="100" width="100">
-
-      
-    
-
-
+    </div>
     <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

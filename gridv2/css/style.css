@@ -25,17 +25,10 @@ body{
     font-family: 'Times New Roman', Times, serif;
     padding: 3px;
     margin-bottom: 1px;
-    color:#c3c3bd;
+    color:grey;
 }
 
-.menu :hover{
-    background-color:grey;
-    display:inline-flex;
-    text-decoration: none;
-    text-align:right;
-   
-    
-}
+
 .h4{
     color:#222a2e;
  margin-bottom: 20px;
@@ -47,6 +40,9 @@ body{
 }
  .imagen:hover{
      background-color: lightblue;
+ }
+ .card-body{
+     color: grey;
  }
 
     
