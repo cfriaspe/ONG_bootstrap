@@ -32,7 +32,7 @@ body{
 
 .h4{
     color:#222a2e;
- margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .h6{
@@ -49,6 +49,16 @@ body{
  .p{
      background-color:black;
      margin-bottom:50px;
+ }
+
+ .marginbotton{
+     margin-right: 300px;
+ }
+
+ .bordesolido{
+     border-style: solid;
+     border-color: red;
+     border-width: 2px;
  }
 
 
