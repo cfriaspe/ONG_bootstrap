@@ -25,7 +25,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     padding: 3px;
     margin-bottom: 1px;
-    color:ghostwhite;
+    color:grey;
+    text-align: center;
 }
 
 
@@ -44,6 +45,12 @@ body{
  .card-body{
      color: grey;
  }
+
+ .p{
+     background-color:black;
+     margin-bottom:50px;
+ }
+
 
     
 
