@@ -48,17 +48,20 @@ body{
 
  .p{
      background-color:black;
-     margin-bottom:50px;
+     margin-bottom:40px;
+ }
+ .pop-up{
+     color: black;
  }
 
  .marginbotton{
-     margin-right: 300px;
+     margin-right: 50px;
  }
 
  .bordesolido{
      border-style: solid;
      border-color: red;
-     border-width: 2px;
+     border-width: 1px;
  }
 
 
