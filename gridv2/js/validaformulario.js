@@ -91,6 +91,7 @@ function mostrarError(mensaje){
 
 // crear objeto inicio sesion---------------//
 
+/*
 const sesion = {
     rut:'',
     pasaporte:''
@@ -110,10 +111,10 @@ var usuarioAutenticado = new Promise (function(resolve,reject){
     var auth = true;
 
     if(auth){
-    /*esto es una funcion*/resolve('usuario autenticado');// el promise se cumple
+    //esto es una funcion resolve('usuario autenticado');// el promise se cumple
 
     }else{
-    /*esto es una funcion*/reject('no se pudo iniciar sesion');// el promise no se cumple
+    //esto es una funcion reject('no se pudo iniciar sesion');// el promise no se cumple
 
     }
 });
@@ -131,8 +132,6 @@ const iniciosesion = document.querySelector('usuario');
 usuario.addEventListener('click',function(evento){
     evento.preventDefault();
 
-
-     
     //valida el inicio de sesion
 
      const { rut , pasaporte = sesion};
@@ -149,36 +148,39 @@ usuario.addEventListener('click',function(evento){
 
      // envia el formulario    
     //console.log('Enviando Formulario'); solo para validar funcion por consola
-})
-function validaTexto (evento){
-   sesion[evento.target.id] = evento.target.value;
-}
-//muestra mensaje de envio correcto
+    })
+    function validaTexto (evento){
+    sesion[evento.target.id] = evento.target.value;
+    }
+    //muestra mensaje de envio correcto
 
-function mostrarMensaje(mensaje){
-    const alerta = document.createElement('P');
-    alerta.textContent = mensaje;
-    alerta.classList.add ('sesionon');
-    formulario.appendChild(alerta);
+    function mostrarMensaje(mensaje){
+        const alerta = document.createElement('P');
+        alerta.textContent = mensaje;
+        alerta.classList.add ('sesionon');
+        formulario.appendChild(alerta);
 
-//mensaje desaparece despues de 3 segundos
-setTimeout(()=>{
-    alerta.remove();
-},3000);
-    
-}
-// muestra el error en pantalla
+    //mensaje desaparece despues de 3 segundos
+    setTimeout(()=>{
+        alerta.remove();
+    },3000);
+        
+    }
+    // muestra el error en pantalla
 
-function mostrarError(mensaje){
-    const error =document.createElement('P');
-    error.textContent= mensaje;
-    error.classList.add ('sesionoff');
+    function mostrarError(mensaje){
+        const error =document.createElement('P');
+        error.textContent= mensaje;
+        error.classList.add ('sesionoff');
 
-  formulario.appendChild(error);
+    formulario.appendChild(error);
 
-  //mensaje desaparece despues de algunos segundos 
+    //mensaje desaparece despues de algunos segundos 
 
-  setTimeout(() => {
-      error.remove();
-  },3000);
-}
+    setTimeout(() => {
+        error.remove();
+    },3000);
+    }
+
+*/
+
