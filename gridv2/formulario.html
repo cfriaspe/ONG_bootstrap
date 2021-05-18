@@ -36,27 +36,27 @@
                         <a class="dropdown-item" href="index.html">Inicio</a>
                         </div>
                     </div>
+               
             </header>
         <!--linea de inicio de sesion usuario-->        
         <div class="container">
             <div class="row justify-content-center mb-3">
                 <div class="col-12 col-md-6">
-                    <form action="formularioexitoso.html" class="form-control bordesolido" role="form" method="POST" >
+                    <form action="#" class="form-control" role="form" method="POST" >
                         <fieldset>
                             <legend>Inicio de Sesion</legend>
-                            <hr">
-                            <div class="form-check form-check-inline">
+                            <hr>
+                            <div class="form-check form-check-inline usuarioAutenticado">
                                 <label class="form-check-label">
-                                <p class="h6 mb-2"><em>seleccione preferencia de inicio</em> </p>
-                                    <input type="radio" name="rut" id="rut" value="rut">Rut
+                                <p class="h6 mb-2"><em>seleccione preferencia de inicio</em></p>
+                                <input type="radio" name="rut" value="rut">Rut
                                 </label>
                             </div>
                             <div    class="form-check form-check-inline">
                                 <label class="form-check-label">
-                                    <input type="radio" name="pasaporte" id="pasaporte" value="pasaporte">Pasaporte
+                                    <input type="radio" name="rut" value="rut">Pasaporte
                                 </label>
-                            </div>
-        <!--linea de inicio de recordar usuario-->   
+                            </div> 
                                 <form action="#" class="form-inline" class="formulario">
                                     <input type="text" class="form-control form-control-sm mb-4" id="usuario" placeholder="Ingrese su Usuario sin puntos ni guion">
                                         <input type="password" class="form-control form-control-sm mb-4" id="password" placeholder="Ingrese su Contraseña">
@@ -64,7 +64,7 @@
                                                 <input type="checkbox" name="Recordar" id="recordar" class="form-check-input">
                                                 <label for="recordar" class="form-check-label"> Recordar este Usuario</label>
                                             </div>
-                                            <input type="submit" value="InicioSesion" class="btn btn-primary mt-5 boton">
+                                            <input type="submit" value="Inicio Sesion" class="btn btn-primary mt-5 boton">
                                 </form>
                         </fieldset>
                     </form>
@@ -132,5 +132,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="js/validaformulario.js"></script>
+    <script src="js/geoloca.js"></script>
 </body>   
 </html> 

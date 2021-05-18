@@ -89,8 +89,7 @@ function mostrarError(mensaje){
   },3000);
 }
 
-
-// crear objeto inicio sesion
+// crear objeto inicio sesion---------------//
 
 const sesion = {
     rut:'',
@@ -99,21 +98,46 @@ const sesion = {
 
 //evento de los input
 const rut = document.querySelector('#rut');
-const apellido = document.querySelector('#pasaporte');
+const pasaporte = document.querySelector('#pasaporte');
 
 rut.addEventListener     ('input',validaTexto);
 pasaporte.addEventListener ('input',validaTexto);
 
 //evento submit
 
-const formulario = document.querySelector('.formulario');
-formulario.addEventListener ('submit',function(evento) {
-    evento.preventDefault();
-     
-    //valdia el inicio de sesion
 
-     const { rut , pasaporte = sesion;
-         if (rut ==='' ||pasaporte === ''){
+var usuarioAutenticado = new Promise (function(resolve,reject){
+    var auth = true;
+
+    if(auth){
+    /*esto es una funcion*/resolve('usuario autenticado');// el promise se cumple
+
+    }else{
+    /*esto es una funcion*/reject('no se pudo iniciar sesion');// el promise no se cumple
+
+    }
+});
+
+usuarioAutenticado
+    .then (function(resultado){
+        //console.log(resultado)
+    })
+    .catch(function(error){
+        //console.log(error)
+
+    })
+
+const iniciosesion = document.querySelector('usuario');
+usuario.addEventListener('click',function(evento){
+    evento.preventDefault();
+
+
+     
+    //valida el inicio de sesion
+
+     const { rut , pasaporte = sesion};
+
+        if (rut ==='' ||pasaporte === ''){
              mostrarError('Todos los campos son obligatorios');
              
              return; // corta la linea de ejecucion del codigo
@@ -158,4 +182,3 @@ function mostrarError(mensaje){
       error.remove();
   },3000);
 }
-*/
